@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap');
+
+* {
+  margin: 0;
+  background: #282C34;
+  overflow: hidden;
+}
+
+b {
+  color: white;
+  font-family: 'Epilogue', sans-serif;
+  font-size:  25px;
+  position: relative;
+  top: 3px;
+  left: 0px;
+  background: transparent;
+}
+
+.Top_Bar {
+  background: #EF7A34;
+  height: 60px;
+  width: 100%;
+}
+
+.Input_Box {
+  font-family: 'Epilogue', sans-serif;
+  font-size:  13px;
+  color: white;
+  background: #21252B;
+  width: 99%;
+  height: 86%;
+  border-radius: 8px;
+  outline: none;
+  margin: 10px;
+  vertical-align: top;
+}
+
+.Bottom_Bar {
+  background: #21252b;
+  position: Bottom;
+  width: 100%;
+  height: 50px;
+}
+
+.Post_Button {
+  background-color: #ef7a34;
+  border-radius: 5px;
+  width: 70px;
+  height: 30px;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  border: none;
+  color: white;
+  font-family: 'Epilogue', sans-serif;
+  font-size:  15px;
+}
+
+.Post_Button:hover {
+  background-color: #e95b0a;
+  transition: all .5s ease;
+}
