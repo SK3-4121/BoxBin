@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>BoxBin - Home</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <div class="Top_Bar">
+  <button onclick="redirect()" style="background: transparent; width: 150px; height: 60px; border: none;"><b class="Title">BoxBin</b></button>
+  </div>
+  <textarea type="text" name="" value="" class="Input_Box" placeholder="-- Put it in me"></textarea>
+  <div class="Bottom_Bar">
+    <button type="button" class="Post_Button" name="button" onclick="press()">▸ Post</button>
+  </div>
+  <script>
+    function redirect() {
+      window.location.href = "https://boxbin.fakefedora.repl.co";
+    }
+    function press() {
+      if (document.getElementsByClassName("Input_Box")[0].value.length < 2048) {
+        console.log("[+]: UPLOAD SENT");
+        window.location.href = "https://boxbin.fakefedora.repl.co/API/API.php?uxl=" + document.getElementsByClassName("Input_Box")[0].value;
+      } else {
+        console.log("[-]: FAILED TO UPLOAD STRING LENGTH 2048");
+      }
+    }
+  </script>
+</html>
